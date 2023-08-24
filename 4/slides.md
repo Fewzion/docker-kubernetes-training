@@ -1,6 +1,6 @@
 layout: true
 class: middle
-background-image: url(https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/propel-background.png)
+background-image: url(https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/citeops-background.png)
 background-size: contain
 
 ---
@@ -13,7 +13,7 @@ background-size: contain
 
 ### 4.1 Session 3 Rehash
 
-- https://propel-ventures.github.io/docker-kubernetes-training/3/#7
+- https://fewzion.github.io/docker-kubernetes-training/3/#7
 ---
 
 ### 4.2 Docker Registries
@@ -26,7 +26,7 @@ background-size: contain
 - [Google Cloud Container Registry](https://cloud.google.com/container-registry)
 - [Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/)
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.registry.jpg)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.registry.jpg)
 
 ---
 
@@ -34,7 +34,7 @@ background-size: contain
 
 - Sign up/Login to https://hub.docker.com/
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.hub.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.hub.png)
 
 ---
 
@@ -44,7 +44,7 @@ background-size: contain
 - enter in a repository name
 - default settings are fine - note this is a public repo
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.create.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.create.png)
 
 ---
 
@@ -52,7 +52,7 @@ background-size: contain
 
 - note the `docker push kevinciq/session4:tagname` command - your version of this is needed later
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.create.push.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.create.push.png)
 
 ---
 
@@ -60,7 +60,7 @@ background-size: contain
 
 - run `docker login` on your local cli
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.login.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.login.png)
 
 ---
 
@@ -69,14 +69,14 @@ background-size: contain
 - run `docker images | grep session3` on your local cli
 - run `docker tag session3:flask kevinciq/session4:flask` - use your own values, you can't push to mine
 - run `docker push kevinciq/session4:flask`
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.pushing.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.pushing.png)
 
 ---
 
 ### 4.8 You've now authored a docker image
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.pushed.png)
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.pushed.hub.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.pushed.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.pushed.hub.png)
 
 ---
 
@@ -85,7 +85,7 @@ background-size: contain
 - run `docker images | grep session4` on your local cli
 - note the `IMAGE ID` and size is the same for both images
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.pushed.local.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.pushed.local.png)
 
 ---
 
@@ -95,7 +95,7 @@ background-size: contain
 - (set up a new project, billing)
 - `docker pull kevinciq/session4:flask`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.gcp.pull.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.gcp.pull.png)
 
 ---
 
@@ -105,19 +105,19 @@ background-size: contain
 - `docker push gcr.io/basic-decoder-319517/kevinciq/session4:flask`
 - `gcloud run deploy --image=gcr.io/basic-decoder-319517/kevinciq/session4:flask --port=5000 --region=us-central1 --allow-unauthenticated --platform=managed`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.gcp.create.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.gcp.create.png)
 
 ---
 
 ### 4.12 Using the image on a cloud - GCP
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.gcp.created.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.gcp.created.png)
 
 ---
 
 ### 4.13 Using the image on a cloud - GCP
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.gcp.shutdown.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.gcp.shutdown.png)
 
 ---
 

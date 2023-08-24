@@ -1,6 +1,6 @@
 layout: true
 class: middle
-background-image: url(https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/propel-background.png)
+background-image: url(https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/citeops-background.png)
 background-size: contain
 
 ---
@@ -128,7 +128,7 @@ resources:
 
 ### 3.6 Building an App (Python Flask)
 
-- clone the training repo from https://github.com/propel-ventures/docker-kubernetes-training
+- clone the training repo from https://github.com/fewzion/docker-kubernetes-training
 - cd into the '3' subfolder, then the 'flask' subfolder
 - run `docker build -t session3:flask .`
 - run `docker run -it --rm -p 5000:5000 session3:flask`
@@ -157,7 +157,7 @@ CMD ["app.py"]
 
 ### 3.8 Building an App (dotnet)
 
-- clone the training repo from https://github.com/propel-ventures/docker-kubernetes-training
+- clone the training repo from https://github.com/fewzion/docker-kubernetes-training
 - cd into the '3' subfolder, then the 'dotnet' subfolder
 - run `docker build -t session3:dotnet .`
 - run `docker run -it --rm -p 5000:80 session3:dotnet`
@@ -165,7 +165,7 @@ CMD ["app.py"]
 
 resources:
 
-[Dockerfile](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/3/dotnet/Dockerfile)
+[Dockerfile](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/3/dotnet/Dockerfile)
 
 [Tutorial](https://docs.microsoft.com/en-us/aspnet/core/host-and-deploy/docker/building-net-docker-images?view=aspnetcore-5.0)
 
@@ -175,7 +175,7 @@ resources:
 
 - run `docker build -t session3 .`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.dotnet.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.dotnet.png)
 
 ---
 

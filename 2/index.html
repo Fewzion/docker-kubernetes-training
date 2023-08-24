@@ -9,12 +9,12 @@
 
       body { 
         font-family: 'Ubuntu Mono'; 
-        color: white;
+        color: black;
       }
       h1, h2, h3 {
         font-family: 'Ubuntu Mono';
         font-weight: normal;
-        color: white;
+        color: black;
       }
       .remark-code, .remark-inline-code { font-family: 'Cutive Mono'; }
     </style>
@@ -24,7 +24,7 @@
 
 layout: true
 class: middle
-background-image: url(https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/propel-background.png)
+background-image: url(https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/citeops-background.png)
 background-size: contain
 
 ---
@@ -39,13 +39,13 @@ background-size: contain
 
 - `docker ps`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.ps.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.ps.png)
 
 ---
 
 - `docker run hello-world`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.hw.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.hw.png)
 
 ---
 
@@ -53,7 +53,7 @@ background-size: contain
 
 - `docker pull alpine`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.pa.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.pa.png)
 
 ---
 
@@ -62,7 +62,7 @@ background-size: contain
 - listing your images
 - `docker images`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.images.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.images.png)
 
 ---
 
@@ -74,7 +74,7 @@ background-size: contain
 - then run `whoami` again
 - play around - e.g. `df -h`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.run.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.run.png)
 
 - type `exit` to leave the container
 - type `docker ps`
@@ -88,7 +88,7 @@ background-size: contain
 - check that your daemon container is running via `docker ps`
 - check its logs via `docker logs {CONTAINER ID}`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.run.d.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.run.d.png)
 
 - if you make a mistake, `docker rm` will come in handy
 
@@ -99,7 +99,7 @@ background-size: contain
 - listing your running containers
 - `docker ps`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.run.ps.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.run.ps.png)
 
 ---
 
@@ -109,7 +109,7 @@ background-size: contain
 - `docker exec -it alpine-kevin /bin/sh`
 - at the new prompt' run `ps -ef`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.exec.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.exec.png)
 
 - `exit` to return to your dev machine
 
@@ -120,7 +120,7 @@ background-size: contain
 - running a command on a background image
 - `docker exec alpine-kevin /bin/sh -c ps`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.exec.c.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.exec.c.png)
 
 - no need to use `-it` interactive and tty options
 - no need for `exit` to return to your dev machine
@@ -130,7 +130,7 @@ background-size: contain
 
 - `docker info`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.info.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.info.png)
 
 ---
 
@@ -142,7 +142,7 @@ background-size: contain
 - `docker kill {CONTAINER ID}`
 - `docker ps` should no longer return the container id
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.kill.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.kill.png)
 
 ---
 
@@ -154,7 +154,7 @@ background-size: contain
 - the (named) *image* for your *container* is still in the system
 - `docker ps -a` will show stopped containers
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.rm.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.rm.png)
 
 ---
 
@@ -162,7 +162,7 @@ background-size: contain
 
 - `docker rm alpine-kevin`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.rm.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.rm.png)
 
 - `docker ps -a` should no longer return that container id
 - we will cover docker hygiene further in a later session
@@ -173,7 +173,7 @@ background-size: contain
 
 - stopping your engine (and starting it again)
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.dead.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.dead.png)
 
 - help out anyone who needs it
 
