@@ -1,6 +1,6 @@
 layout: true
 class: middle
-background-image: url(https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/cfewzion.png)
+background-image: url(https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/citeops-background.png)
 background-size: contain
 
 ---
