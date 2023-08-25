@@ -358,7 +358,7 @@ spec:
 
 ---
 
-### 7.27 Cluster into via `kubectl get`
+### 7.27 Cluster info via `kubectl get`
 
 ![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.kubectl.guestbook.png)
 
