@@ -1,6 +1,6 @@
 layout: true
 class: middle
-background-image: url(https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/propel-background.png)
+background-image: url(https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/citeops-background.png)
 background-size: contain
 
 ---
@@ -13,7 +13,7 @@ background-size: contain
 
 ### 10.1 Multi-Container Pod Design Patterns
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.ckad.1.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.ckad.1.png)
 
 ---
 
@@ -72,21 +72,21 @@ https://blog.nillsf.com/index.php/2019/07/28/ckad-series-part-4-multi-container-
 
 ### 10.6 Sidecar Example - Self-Signed SSL Cert
 
-- Grab this file: https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/10/openssl.cnf
+- Grab this file: https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/10/openssl.cnf
 - Run `openssl req -config ./openssl.cnf -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out session10.crt -keyout session10.key`
 - Run `kubectl create secret generic mycert --from-file session10.crt`
 - Run `kubectl create secret generic mykey --from-file session10.key`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.sidecar.openssl.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.sidecar.openssl.png)
 
 ---
 
 ### 10.7 Sidecar Example - Nginx ConfigMap
 
-- Grab this file: https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/10/nginx.conf
+- Grab this file: https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/10/nginx.conf
 - Run `kubectl create configmap nginx-config --from-file nginx.conf`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.sidecar.nginx.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.sidecar.nginx.png)
 
 Resources:
 https://kubernetes.io/docs/concepts/configuration/configmap/
@@ -95,18 +95,18 @@ https://kubernetes.io/docs/concepts/configuration/configmap/
 
 ### 10.8 Sidecar Example - Deployment Yaml
 
-- Grab this file: https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/10/sidecar.yaml
+- Grab this file: https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/10/sidecar.yaml
 - `kubectl apply -f sidecar.yaml`
 - `minikube service  port-443-service --url`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.sidecar.url.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.sidecar.url.png)
 
 ---
 
 ### 10.9 Sidecar App in the browser
 
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.sidecar.browser.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.sidecar.browser.png)
 
 
 ---

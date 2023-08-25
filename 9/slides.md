@@ -1,6 +1,6 @@
 layout: true
 class: middle
-background-image: url(https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/propel-background.png)
+background-image: url(https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/citeops-background.png)
 background-size: contain
 
 ---
@@ -15,17 +15,17 @@ background-size: contain
 
 - Run: `minikube delete --all --purge`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.minikube.purge.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.minikube.purge.png)
 
 ---
 
 ### 9.2 Prepare Session9 App
 
-- `curl -LO https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/9/kustomization.yaml`
-- `curl -LO https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/9/mysql-deployment.yaml`
-- `curl -LO https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/9/wordpress-deployment.yaml`
+- `curl -LO https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/9/kustomization.yaml`
+- `curl -LO https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/9/mysql-deployment.yaml`
+- `curl -LO https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/9/wordpress-deployment.yaml`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.curl.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.curl.png)
 
 ---
 
@@ -33,7 +33,7 @@ background-size: contain
 
 - `kubectl apply -k .`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.apply.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.apply.png)
 
 ---
 
@@ -41,7 +41,7 @@ background-size: contain
 
 - `kubectl get pvc`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.pvc.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.pvc.png)
 
 
 Resources: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes
@@ -54,14 +54,14 @@ Resources: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#acces
 - `minikube service wordpress --url`
 
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.url.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.url.png)
 ---
 
 ### 9.6 A Note on LoadBalancer
 
 - *LoadBalancer is for a cloud to create an external load balancer like ALP/NLP in AWS*
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.externalip.pending.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.externalip.pending.png)
 
 ---
 
@@ -69,7 +69,7 @@ Resources: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#acces
 
 - `minikube ip`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.minikube.ip.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.minikube.ip.png)
 
 ---
 
@@ -83,7 +83,7 @@ Resources: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#acces
   - 192.168.49.2
 ```
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.externalip.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.externalip.png)
 
 ---
 
@@ -92,8 +92,8 @@ Resources: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#acces
 - `kubectl apply -f wordpress-service.yaml`
 - `minikube service wordpress --url`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.externalip.apply.png)
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.ip.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.externalip.apply.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.ip.png)
 
 ---
 
@@ -101,7 +101,7 @@ Resources: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#acces
 
 - e.g. `http://192.168.49.2:30776`:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.open.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.open.png)
 
 ---
 
@@ -109,7 +109,7 @@ Resources: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#acces
 
 - `kubectl get secrets`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.secrets.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.secrets.png)
 
 ---
 
@@ -117,7 +117,7 @@ Resources: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#acces
 
 - `kubectl get secrets -o json > secrets.yaml`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.secrets.yaml.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.secrets.yaml.png)
 
 ---
 
@@ -125,7 +125,7 @@ Resources: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#acces
 
 - Run `echo "QFNlc3Npb245"|base64 -d`:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.secrets.decode.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.secrets.decode.png)
 
 ---
 
@@ -133,7 +133,7 @@ Resources: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#acces
 
 - Run `echo -n "@Session9a" |base64`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.secrets.encode.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.secrets.encode.png)
 
 ---
 
@@ -142,7 +142,7 @@ Resources: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#acces
 - Edit your `secrets.yaml` and replace the old encoded secret with the new encoded secret
 - Run `kubectl apply -f secrets.yaml`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.secrets.apply.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.secrets.apply.png)
 
 ---
 
@@ -150,7 +150,7 @@ Resources: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#acces
 
 - Open up your minikube dashboard
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.secrets.dashboard.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.secrets.dashboard.png)
 
 ---
 
@@ -158,8 +158,8 @@ Resources: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#acces
 
 - Check your secret values via your pods
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.secrets.mysql.png)
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.secrets.wp.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.secrets.mysql.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.secrets.wp.png)
 
 ---
 
@@ -167,8 +167,8 @@ Resources: https://kubernetes.io/docs/concepts/storage/persistent-volumes/#acces
 
 - Check your secret values via your pods
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.secrets.mysql.png)
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.wordpress.secrets.wp.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.secrets.mysql.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.wordpress.secrets.wp.png)
 
 ---
 

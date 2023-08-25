@@ -1,6 +1,6 @@
 layout: true
 class: middle
-background-image: url(https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/propel-background.png)
+background-image: url(https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/citeops-background.png)
 background-size: contain
 
 ---
@@ -15,11 +15,11 @@ background-size: contain
 
 - Get your Minikube version: `minikube version`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.minikube.version.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.minikube.version.png)
 
 - Get your Kubectl version: `kubectl version -o yaml`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.kubectl.version.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.kubectl.version.png)
 
 ---
 
@@ -27,7 +27,7 @@ background-size: contain
 
 - `minikube start --driver=docker`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.minikube.start.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.minikube.start.png)
 
 ---
 
@@ -35,7 +35,7 @@ background-size: contain
 
 - Run `minikube status`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.minikube.status.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.minikube.status.png)
 
 ---
 
@@ -43,7 +43,7 @@ background-size: contain
 
 - Run `kubectl cluster-info` and `kubectl get nodes`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.kubectl.status.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.kubectl.status.png)
 
 ---
 
@@ -51,7 +51,7 @@ background-size: contain
 
 - Run `docker ps` in another terminal window
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.minikube.docker.ps.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.minikube.docker.ps.png)
 
 ---
 
@@ -59,7 +59,7 @@ background-size: contain
 
 - Run `minikube addons list`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.minikube.addons.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.minikube.addons.png)
 
 ---
 
@@ -67,7 +67,7 @@ background-size: contain
 
 - Run `minikube dashboard`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.minikube.dashboard.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.minikube.dashboard.png)
 
 ---
 
@@ -75,7 +75,7 @@ background-size: contain
 
 - `minikube dashboard` should have opened up a browser window for you:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.dashboard.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.dashboard.png)
 
 ---
 
@@ -83,7 +83,7 @@ background-size: contain
 
 - Using pre-baked backend and frontend images
 - Next week we'll bake our own
-- If the yaml files are cut off, originals are here: https://github.com/propel-ventures/docker-kubernetes-training/tree/main/7/guestbook
+- If the yaml files are cut off, originals are here: https://github.com/fewzion/docker-kubernetes-training/tree/main/7/guestbook
 
 ---
 ### 7.10 `redis-leader-deployment.yaml`:
@@ -125,7 +125,7 @@ spec:
 - Run `kubectl apply -f redis-leader-deployment.yaml`
 - Run `kubectl get pods`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.redis.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.redis.png)
 
 ---
 
@@ -133,7 +133,7 @@ spec:
 
 - Run `kubectl logs -f deployment/redis-leader`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.redis.logs.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.redis.logs.png)
 
 ---
 
@@ -168,7 +168,7 @@ spec:
 - Run `kubectl apply -f redis-leader-service.yaml`
 - Run `kubectl get service`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.redis.service.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.redis.service.png)
 
 ---
 
@@ -211,7 +211,7 @@ spec:
 - Run `kubectl apply -f redis-follower-deployment.yaml`
 - Run `kubectl get pods`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.redis.replicas.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.redis.replicas.png)
 
 ---
 
@@ -242,7 +242,7 @@ spec:
 - Run `kubectl apply -f redis-follower-service.yaml`
 - Run `kubectl get service`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.redis.replicas.service.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.redis.replicas.service.png)
 
 
 ---
@@ -285,7 +285,7 @@ spec:
 - Run `kubectl apply -f frontend-deployment.yaml`
 - Run `kubectl get pods -l app=guestbook -l tier=frontend`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.frontend.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.frontend.png)
 
 ---
 
@@ -322,7 +322,7 @@ spec:
 - Run `kubectl apply -f frontend-service.yaml`
 - Run `kubectl get services`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.frontend.service.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.frontend.service.png)
 
 ---
 
@@ -330,7 +330,7 @@ spec:
 
 - Run `kubectl port-forward svc/frontend 8080:80`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.port.forward.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.port.forward.png)
 
 ---
 
@@ -338,7 +338,7 @@ spec:
 
 - Browse to `http://localhost:8080/`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.guestbook.1.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.guestbook.1.png)
 
 ---
 
@@ -346,7 +346,7 @@ spec:
 
 - Open up another tab to `http://localhost:8080/`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.guestbook.2.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.guestbook.2.png)
 
 ---
 
@@ -354,13 +354,13 @@ spec:
 
 - Refresh your local dashboard page from earlier - e.g. `http://127.0.0.1:34535/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/#/overview?namespace=default`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.dashboard.guestbook.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.dashboard.guestbook.png)
 
 ---
 
 ### 7.27 Cluster into via `kubectl get`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.kubectl.guestbook.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.kubectl.guestbook.png)
 
 ---
 

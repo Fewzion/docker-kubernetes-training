@@ -1,6 +1,6 @@
 layout: true
 class: middle
-background-image: url(https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/propel-background.png)
+background-image: url(https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/cfewzion.png)
 background-size: contain
 
 ---
@@ -62,7 +62,7 @@ resources:
 
 - You might need to install it - try `docker-compose -v`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.compose.version.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.compose.version.png)
 
 - see https://docs.docker.com/compose/install/ if you don't have it
 
@@ -140,8 +140,8 @@ CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
 
 - build the image: `docker build -t session6:flask .`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.compose.flask.1.png)
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.compose.flask.2.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.compose.flask.1.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.compose.flask.2.png)
 
 ---
 
@@ -169,7 +169,7 @@ services:
 
 - run `docker-compose up`:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.compose.up.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.compose.up.png)
 
 ---
 
@@ -177,7 +177,7 @@ services:
 
 - run `docker ps` in another terminal window:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.compose.ps.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.compose.ps.png)
 
 ---
 
@@ -185,15 +185,15 @@ services:
 
 - use your browser to open up the app url - e.g.:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.compose.app.0.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.compose.app.0.png)
 
 - e.g. http://172.18.0.3:5000/
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.compose.app.1.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.compose.app.1.png)
 
 - refresh the page:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.compose.app.2.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.compose.app.2.png)
 
 
 ---
@@ -202,12 +202,12 @@ services:
 
 - hit ctrl-c in the `docker-compose` terminal session to bring it down:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.compose.dead.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.compose.dead.png)
 
 
 - confirm its dead in the browser:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.compose.dead.def.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.compose.dead.def.png)
 
 ---
 
@@ -215,11 +215,11 @@ services:
 
 - run `docker-compose up` again:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.compose.app.3.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.compose.app.3.png)
 
 - confirm its good in the browser:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.compose.app.4.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.compose.app.4.png)
 
 ---
 
@@ -227,7 +227,7 @@ services:
 
 - what is Docker:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.internals.1.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.internals.1.png)
 
 resources:
 
@@ -239,7 +239,7 @@ resources:
 
 - Docker Component Diagram:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.internals.2.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.internals.2.png)
 
 ---
 
@@ -247,7 +247,7 @@ resources:
 
 - Docker Image Diagram:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.internals.3.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.internals.3.png)
 
 ---
 
@@ -255,7 +255,7 @@ resources:
 
 - Docker Implementation Diagram:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/docker.internals.4.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/docker.internals.4.png)
 
 ---
 

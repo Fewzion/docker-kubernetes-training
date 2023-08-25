@@ -1,6 +1,6 @@
 layout: true
 class: middle
-background-image: url(https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/propel-background.png)
+background-image: url(https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/citeops-background.png)
 background-size: contain
 
 ---
@@ -25,7 +25,7 @@ background-size: contain
 - `docker login`
 - `docker tag session8:flask kevinciq/session8:flask`
 - `docker push kevinciq/session8:flask`
-- sources here: https://github.com/propel-ventures/docker-kubernetes-training/tree/main/8/cluster/flask
+- sources here: https://github.com/fewzion/docker-kubernetes-training/tree/main/8/cluster/flask
 
 ---
 
@@ -64,7 +64,7 @@ spec:
 
 - Run `kubectl apply -f flask-deployment.yaml`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.dashboard.flask.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.dashboard.flask.png)
 
 ---
 
@@ -96,7 +96,7 @@ spec:
 
 - Run `kubectl apply -f flask-service.yaml`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.dashboard.flask.service.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.dashboard.flask.service.png)
 
 ---
 
@@ -157,7 +157,7 @@ spec:
 
 - `kubectl apply -f redis-deployment.yaml,redis-service.yaml`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.dashboard.services.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.dashboard.services.png)
 
 ---
 
@@ -166,7 +166,7 @@ spec:
 - `kubectl get service flask`:
 - `kubectl get service redis`:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.kubectl.services.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.kubectl.services.png)
 
 ---
 
@@ -174,7 +174,7 @@ spec:
 
 - `kubectl port-forward svc/flask 8080:5000`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.flask.forwarded.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.flask.forwarded.png)
 
 ---
 
@@ -182,7 +182,7 @@ spec:
 
 - Run `kubectl logs -f svc/flask`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.flask.logs.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.flask.logs.png)
 
 ---
 
@@ -190,7 +190,7 @@ spec:
 
 - Run `kubectl get pods`:
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.kubectl.get.pods.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.kubectl.get.pods.png)
 
 ---
 
@@ -202,7 +202,7 @@ spec:
 - Run `apt-get install curl`
 - Run `curl 127.0.0.1:5000`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.flask.curl.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.flask.curl.png)
 
 ---
 
@@ -210,7 +210,7 @@ spec:
 
 - Run `kubectl scale deployment flask --replicas=5`
 
-![](https://raw.githubusercontent.com/propel-ventures/docker-kubernetes-training/main/img/k8s.flask.scale.png)
+![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.flask.scale.png)
 
 ---
 
