@@ -11,9 +11,9 @@ background-size: contain
 
 ---
 
-### 10.1 Probes
+### 1.1 Cluster Architecture
 
-![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/k8s.ckad.2.png)
+![](https://github.com/Fewzion/docker-kubernetes-training/blob/86c52edff95e1c0a71e34c1f585c31a595f7e154/img/CiteOps.Kubernetes.Architecture-AWS.png)
 
 ---
 
