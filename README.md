@@ -1,5 +1,8 @@
 # Docker+Kubernetes Training
 
+Week 0:
+[CW Cluster Intro](https://fewzion.github.io/docker-kubernetes-training/01-updated/#1).
+
 Week 1:
 [Intro Session Slides](https://fewzion.github.io/docker-kubernetes-training/).
 
