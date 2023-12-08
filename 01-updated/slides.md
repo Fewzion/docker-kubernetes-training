@@ -13,7 +13,7 @@ background-size: contain
 
 ### 1.1 Cluster Architecture
 
-![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/CiteOps.Kubernetes.Architecture-AWS.png)
+.center[![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/CiteOps.Kubernetes.Architecture-AWS.png)]
 
 ---
 
