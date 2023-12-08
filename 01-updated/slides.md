@@ -5,9 +5,37 @@ background-size: contain
 
 ---
 
-# Docker+Kubernetes Training
-## Session 1
-## October 27th 2023
+# CW Docker+Kubernetes Training
+## Session 1 - Intro to CW's new Cluster Platform
+## Date TBA
+
+Welcome!
+
+This first session is an introduction to Commit Works' new Kubernetes platform.
+
+Topics:
+- What we're building
+  - Cloud Native
+  - Kubernetes Clusters
+  - CiteOps Docker Containers
+  - Build pipelines
+- Why we're building it
+  - Cybersecurity
+  - Scalability
+  - Availability/Resilience (self healing, failover, multiple AZs)
+  - Costs
+  - Why not just two Linux boxes?
+- What tools and technologies we're using
+  - AWS EKS
+  - Terraform
+  - Docker
+  - IaC
+  - GitHub Actions
+  - Prometheus/Grafana
+  - Traefik
+  - Kubernetes Web Dashboard
+
+
 
 ---
 
