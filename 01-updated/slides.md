@@ -5,9 +5,9 @@ background-size: contain
 
 ---
 
-# CW Docker+Kubernetes Training
-## Session 1 - Intro to CW's new Cluster Platform
-## Date TBA
+### CW Docker+Kubernetes Training
+### Session 1 - Intro to CW's new Cluster Platform
+### Date TBA
 
 Welcome!
 
