@@ -122,22 +122,22 @@ source: https://cloud.google.com/learn/what-is-kubernetes
 
 ### 1.7.2 What we're building - CiteOps Docker Containers
 
-- Whats in the box? (package)
-  - Windows/IIS
-    - .nupkg file (just a .zip)
-    - Built from a .nuspec file - `./Fewzion/Fewzion.nuspec` in the server repo
-    - `<file src="FOUT\**\*.*" target="" />`
-    - In TeamCity we publish `Fewzion\Fewzion.csproj` to `Fewzion\FOUT`
-  - Docker/K8S
-    - container file (not just a .zip)
-    - Built from a `Dockerfile` file - `./Dockerfile` in the root of the server repo
-    - We use GitHub Actions instead of TeamCity to build it
-    - `.github/workflows/docker-ci.yml` in the server repo
-    - `dotnet publish Fewzion/Fewzion.csproj -c Release --no-restore -o Fewzion/out`
-    - `cp -r Fewzion/out/* context/CiteOps/`
-    - `- name: Docker Build & Push`
-    - `uses: mr-smithers-excellent/docker-build-push@v5`
-    - `directory: ./context`
+Whats in the box? (package)
+- Windows/IIS
+  - .nupkg file (just a .zip)
+  - Built from a .nuspec file - `./Fewzion/Fewzion.nuspec` in the server repo
+  - `<file src="FOUT\**\*.*" target="" />`
+  - In TeamCity we publish `Fewzion\Fewzion.csproj` to `Fewzion\FOUT`
+- Docker/K8S
+  - container file (not just a .zip)
+  - Built from a `Dockerfile` file - `./Dockerfile` in the root of the server repo
+  - We use GitHub Actions instead of TeamCity to build it
+  - `.github/workflows/docker-ci.yml` in the server repo
+  - `dotnet publish Fewzion/Fewzion.csproj -c Release --no-restore -o Fewzion/out`
+  - `cp -r Fewzion/out/* context/CiteOps/`
+  - `- name: Docker Build & Push`
+  - `uses: mr-smithers-excellent/docker-build-push@v5`
+  - `directory: ./context`
 
 ---
 
