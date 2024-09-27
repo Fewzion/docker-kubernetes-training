@@ -107,6 +107,33 @@ source: https://cloud.google.com/learn/what-is-kubernetes
 
 ### 1.7 What we're building - CiteOps Docker Containers
 
+
+.center[![](https://raw.githubusercontent.com/fewzion/docker-kubernetes-training/main/img/server.ghcr.png)]
+
+---
+
+### 1.7.1 What we're building - CiteOps Docker Containers
+
+- CiteOps Docker Containers
+  - For Windows/IIS we build .nupkg files that contain our .NET DLLs, front end javascript files, etc - Octopus then deploys it where we tell it to
+  - For k8s, we build container images that contain our .NET DLLs, front end javascript files, etc - k8s (kubectl) then deploys it where we tell it to
+- Whats in the box? (package)
+  - Windows/IIS
+    - .nupkg file (just a .zip)
+    - Built from a .nuspec file - `./Fewzion/Fewzion.nuspec` in the server repo
+    - `<file src="FOUT\**\*.*" target="" />`
+    - In TeamCity we publish `Fewzion\Fewzion.csproj` to `Fewzion\FOUT`
+  - Docker/K8S
+    - container file (not just a .zip)
+    - Built from a `Dockerfile` file - `./Dockerfile` in the root of the server repo
+    - We use GitHub Actions instead of TeamCity to build it
+    - `.github/workflows/docker-ci.yml` in the server repo
+    - `dotnet publish Fewzion/Fewzion.csproj -c Release --no-restore -o Fewzion/out`
+    - `cp -r Fewzion/out/* context/CiteOps/`
+    - `- name: Docker Build & Push`
+    - `uses: mr-smithers-excellent/docker-build-push@v5`
+    - `directory: ./context`
+
 ---
 
 ### 1.8 What we're building - Build pipelines
