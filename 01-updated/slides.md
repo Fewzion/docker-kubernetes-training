@@ -117,6 +117,11 @@ source: https://cloud.google.com/learn/what-is-kubernetes
 - CiteOps Docker Containers
   - For Windows/IIS we build .nupkg files that contain our .NET DLLs, front end javascript files, etc - Octopus then deploys it where we tell it to
   - For k8s, we build container images that contain our .NET DLLs, front end javascript files, etc - k8s (kubectl) then deploys it where we tell it to
+
+---
+
+### 1.7.2 What we're building - CiteOps Docker Containers
+
 - Whats in the box? (package)
   - Windows/IIS
     - .nupkg file (just a .zip)
