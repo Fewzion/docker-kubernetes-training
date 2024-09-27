@@ -132,7 +132,7 @@ Whats in the box? (package)
   - `<file src="FOUT\**\*.*" target="" />`
   - In TeamCity we publish `Fewzion\Fewzion.csproj` to `Fewzion\FOUT`
 - Docker/K8S
-  - container file ([![not just a .zip](https://fewzion.github.io/docker-kubernetes-training/6/#17)])
+  - container file ([not just a .zip](https://fewzion.github.io/docker-kubernetes-training/6/#17))
   - Built from a `Dockerfile` file - `./Dockerfile` in the root of the server repo
   - We use GitHub Actions instead of TeamCity to build it
   - `.github/workflows/docker-ci.yml` in the server repo
